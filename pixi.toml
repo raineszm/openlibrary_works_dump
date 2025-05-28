@@ -1,0 +1,14 @@
+[workspace]
+authors = ["Zach Raines <dev@zmraines.com>"]
+channels = ["conda-forge", "bioconda"]
+name = "openlibrary"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python-isal = ">=1.7.2,<2"
+duckdb = ">=1.2.2,<2"
+google-api-python-client = ">=2.169.0,<3"
+snakemake = { version = ">=9.5.1,<10", channel = "bioconda" }
