@@ -26,4 +26,8 @@ COPY (
                     'data/ol_dump_2025-01-08/ol_dump_works_2025-01-08.txt.gz'
                 )
         )
-) TO 'data/ol_works.parquet' (FORMAT parquet, COMPRESSION ZSTD);
+) TO 'data/ol_works.parquet' (
+    FORMAT parquet,
+    COMPRESSION ZSTD,
+    COMPRESSION_LEVEL 15
+);
