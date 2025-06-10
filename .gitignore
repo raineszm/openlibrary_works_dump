@@ -185,3 +185,5 @@ pyrightconfig.json
 #
 .snakemake
 *.torrent
+
+!data/upload/dataset-metadata.json

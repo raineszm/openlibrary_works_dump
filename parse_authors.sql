@@ -28,7 +28,7 @@ COPY (
         )
     WHERE (json_data->'entity_type') is NULL
         OR json_extract_string(json_data, '$.entity_type') = 'person'
-) TO 'data/ol_authors.parquet' (
+) TO 'data/upload/ol_authors.parquet' (
     FORMAT parquet,
     COMPRESSION ZSTD,
     COMPRESSION_LEVEL 15

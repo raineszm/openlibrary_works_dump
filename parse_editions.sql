@@ -79,7 +79,7 @@ COPY (
         json_data->>'by_statement' as by_statement,
         json_data->'links'->>'$[*]' as links,
         FROM first_english_edition
-) TO 'data/ol_first_editions.parquet' (
+) TO 'data/upload/ol_first_editions.parquet' (
     FORMAT parquet,
     COMPRESSION ZSTD,
     COMPRESSION_LEVEL 15
